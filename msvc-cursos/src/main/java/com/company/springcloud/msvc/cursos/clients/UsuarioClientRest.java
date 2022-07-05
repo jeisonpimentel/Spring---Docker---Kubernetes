@@ -10,7 +10,7 @@ import java.util.List;
 public interface UsuarioClientRest {
 
     @GetMapping("/findById/{id}")
-    Usuario findById(@PathVariable Long id);
+    Usuario findById( @PathVariable Long id );
 
     @PostMapping("/create")
     Usuario create( @RequestBody Usuario usuario );

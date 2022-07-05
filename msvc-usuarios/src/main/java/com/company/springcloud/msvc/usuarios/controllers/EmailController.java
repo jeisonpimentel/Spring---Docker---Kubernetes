@@ -22,10 +22,10 @@ public class EmailController {
         Response response = emailService.sendEmail( request );
 
         if( response.getStatusCode() == 200 || response.getStatusCode() == 202 ){
-            return new ResponseEntity<>("send successfully", HttpStatus.OK );
+            return new ResponseEntity<>("send successfully!!", HttpStatus.OK );
         }
 
-        return new ResponseEntity<>("failed to sent", HttpStatus.NOT_FOUND );
+        return new ResponseEntity<>("failed to sent!!", HttpStatus.NOT_FOUND );
     }
 
 }
